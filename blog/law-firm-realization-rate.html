@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Realization Rate: What It Is and How to Fix It</title>
+  <meta name="description" content="Most law firms lose 10–15% of billable revenue before the invoice is sent. Here's how to diagnose which leak is yours and fix it — without buying new software.">
+  <link rel="canonical" href="https://lawfirm.consulting/blog/law-firm-realization-rate">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Law Firm Realization Rate: What It Is and How to Fix It">
+  <meta property="og:description" content="Most law firms lose 10–15% of billable revenue before the invoice is sent. Here's how to diagnose which leak is yours and fix it.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lawfirm.consulting/blog/law-firm-realization-rate">
+  <meta property="article:published_time" content="2026-07-05">
+  <meta property="article:author" content="John Jakovenko">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Law Firm Realization Rate: What It Is, What's Killing Yours, and How to Fix It",
+        "description": "A management guide to diagnosing and fixing law firm realization rate problems — written by a fractional COO who has worked with 100+ firms.",
+        "author": {
+          "@type": "Person",
+          "name": "John Jakovenko",
+          "jobTitle": "Fractional Law Firm COO",
+          "url": "https://lawfirm.consulting/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Jakovenko Group",
+          "url": "https://lawfirm.consulting"
+        },
+        "datePublished": "2026-07-05",
+        "dateModified": "2026-07-05",
+        "url": "https://lawfirm.consulting/blog/law-firm-realization-rate",
+        "mainEntityOfPage": "https://lawfirm.consulting/blog/law-firm-realization-rate"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a good realization rate for law firms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A healthy realization rate for most law firms is 85–95%. BigLaw firms typically run 85–92% due to outside counsel guidelines and client negotiated discounts. Boutique and mid-size firms should target 88–95%. If your firm is below 80%, something specific is broken — time capture, partner write-downs, or collections — and needs diagnosis before anything else."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between billing realization rate and collection realization rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Billing realization rate measures how much of the time worked actually gets billed: billed fees divided by worked fees. Collection realization rate measures how much of what you bill you actually collect: collected fees divided by billed fees. They identify different problems. Low billing realization points to time capture issues or partner write-downs. Low collection realization points to AR management, invoice disputes, or payment friction."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What causes low realization rates in law firms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The three most common causes are: (1) time not being captured at all — attorneys entering time days later from memory rather than same-day; (2) partners writing down time unilaterally at pre-bill review without accountability; (3) clients not paying invoices in full due to disputes, slow follow-up, or payment friction. Most firms have a primary leak in one of these three areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between utilization rate and realization rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Utilization rate measures how much of an attorney's available time gets recorded as billable hours: billable hours divided by total available hours (usually 1,800–2,200 per year). Realization rate measures how much of those recorded hours actually turn into revenue. You can have high utilization and low realization — attorneys billing lots of hours that then get written down or uncollected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a law firm have a realization rate above 100%?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, technically. This happens when a firm bills more than its standard hourly rates — through contingency matters that settle above expected value, flat fee work completed faster than budgeted, or value billing adjustments upward. It's uncommon for overall firm realization but happens at the matter or practice group level."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the fastest way to improve law firm realization rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The fastest lever is tightening the billing cycle — moving from monthly to bi-weekly billing. Fresher invoices have fewer disputes, clients remember the work better, and write-downs decrease because the time is recent. Combined with a 24-hour time entry policy, most firms see measurable improvement within 60 days. Partner write-down accountability takes longer but has the biggest long-term impact."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Article-specific prose styles */
+    .article-hero {
+      background: var(--dark);
+      padding: 64px 0 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 60%, rgba(37,99,235,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .article-hero .container { position: relative; max-width: 780px; }
+    .article-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #93c5fd;
+      margin-bottom: 20px;
+    }
+    .article-hero h1 {
+      font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .article-byline {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .byline-author {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+    }
+    .byline-sep { color: rgba(255,255,255,0.25); }
+    .byline-date {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.45);
+    }
+    .byline-read {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* Prose */
+    .article-body {
+      padding: 64px 0 80px;
+    }
+    .article-body .container {
+      max-width: 780px;
+    }
+    .prose p {
+      font-size: 1.0625rem;
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 1.4rem;
+    }
+    .prose h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-top: 2.75rem;
+      margin-bottom: 1rem;
+    }
+    .prose h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.015em;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+    .prose strong { font-weight: 700; color: var(--dark); }
+    .prose em { font-style: italic; }
+    .prose a { color: var(--accent); }
+    .prose a:hover { text-decoration: underline; }
+    .prose ul, .prose ol {
+      margin: 0 0 1.4rem 1.5rem;
+      font-size: 1.0625rem;
+      color: var(--text);
+      line-height: 1.75;
+    }
+    .prose li { margin-bottom: 0.4rem; }
+
+    /* Data table */
+    .prose table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+      margin: 1.75rem 0 2rem;
+    }
+    .prose table thead th {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      padding: 0.6rem 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .prose table tbody td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      vertical-align: top;
+    }
+    .prose table tbody tr:last-child td { border-bottom: none; }
+    .prose table tbody tr:nth-child(even) td { background: #f8fafc; }
+
+    /* Formula callout */
+    .formula-box {
+      background: #f1f5f9;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 24px;
+      margin: 1.75rem 0;
+    }
+    .formula-box p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin: 0 0 0.4rem;
+      font-family: 'Courier New', monospace;
+    }
+    .formula-box p:last-child { margin: 0; }
+
+    /* FAQ section */
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .faq-item:last-child { border-bottom: 1px solid var(--border); }
+    .faq-item h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 0 0 0.65rem;
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+    }
+    .faq-item p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Author bio */
+    .author-bio {
+      background: var(--light);
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 3rem;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .author-bio-text p {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .author-bio-text strong { color: var(--dark); font-size: 1rem; display: block; margin-bottom: 6px; }
+
+    @media (max-width: 768px) {
+      .prose h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">Jakovenko<span>.</span>Group</a>
+    <ul class="nav-links">
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html" class="nav-cta">Book a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Article Hero -->
+<div class="article-hero">
+  <div class="container">
+    <span class="article-category">Law Firm Profitability</span>
+    <h1>Law Firm Realization Rate: What It Is, What's Killing Yours, and How to Fix It</h1>
+    <div class="article-byline">
+      <span class="byline-author">John Jakovenko</span>
+      <span class="byline-sep">·</span>
+      <span class="byline-date">July 5, 2026</span>
+      <span class="byline-sep">·</span>
+      <span class="byline-read">12 min read</span>
+    </div>
+  </div>
+</div>
+
+<!-- Article Body -->
+<div class="article-body">
+  <div class="container">
+    <div class="prose">
+
+      <p>I've walked into a lot of firms with realization rate problems. The presentation is almost always the same: the managing partner knows the number is bad, has a vague sense that "attorneys aren't entering time correctly," and has already looked at a couple of software demos. It's one of the first things I assess when I start a <a href="/services.html">fractional COO engagement</a>.</p>
+
+      <p>They're not wrong about time entry. But they're usually looking at the wrong part of the problem.</p>
+
+      <p>A law firm's realization rate measures how much of the time worked actually turns into revenue. If your attorneys worked 1,000 hours in a month and you collected $850,000 against a standard billing value of $1,000,000, your overall realization rate is 85%.</p>
+
+      <p>That 15% gap — $150,000 — didn't vanish because of some accounting mystery. It leaked out at three specific points, and each one has a different fix. Most firms that struggle with realization rate are treating symptom number one (time entry) while ignoring the more expensive symptoms — and losing more than they realize.</p>
+
+      <p>Here's how to find your leak and fix it.</p>
+
+      <hr>
+
+      <h2>What is a law firm's realization rate?</h2>
+
+      <p>A law firm's realization rate is the percentage of billable value worked that the firm ultimately collects as revenue. It accounts for every dollar of attorney time that doesn't make it from work performed to money in the bank.</p>
+
+      <h3>The realization rate formula</h3>
+
+      <p>The full formula has three components:</p>
+
+      <p><strong>Worked fees</strong> — the value of all time recorded at standard billing rates, whether billed or not.</p>
+      <p><strong>Billed fees</strong> — the value of invoices actually sent to clients, after any pre-bill write-downs.</p>
+      <p><strong>Collected fees</strong> — what clients actually paid, after any discounts, disputes, or write-offs.</p>
+
+      <p>From these you get three distinct rates:</p>
+
+      <div class="formula-box">
+        <p>Billing realization rate = Billed fees ÷ Worked fees</p>
+        <p>Collection realization rate = Collected fees ÷ Billed fees</p>
+        <p>Overall realization rate = Collected fees ÷ Worked fees</p>
+      </div>
+
+      <p>The overall rate is the one most firms track. The billing and collection rates are the ones that tell you where the problem is.</p>
+
+      <hr>
+
+      <h2>Billing realization vs. collection realization: the distinction that changes your diagnosis</h2>
+
+      <p>This is where most analyses stop too early. "Our realization rate is 82%" is useful to know. But "our billing realization is 88% and our collection realization is 93%" tells you something you can actually act on.</p>
+
+      <h3>Billing realization rate</h3>
+
+      <p>Billing realization measures the gap between time worked and time billed. If an attorney recorded 10 hours at $500/hour ($5,000 worked) but the invoice went out at $4,200, billing realization is 84%.</p>
+
+      <p>That 16% gap has two possible causes: time that was never captured in the first place (attorneys working without recording it), or time that was recorded and then written down at pre-bill review.</p>
+
+      <p>These look the same in the billing realization number. They have completely different solutions.</p>
+
+      <h3>Collection realization rate</h3>
+
+      <p>Collection realization measures the gap between invoices sent and money collected. If you billed $100,000 and collected $94,000, collection realization is 94%.</p>
+
+      <p>A low collection rate points to problems outside the pre-bill process — AR aging, invoice disputes, slow follow-up, or clients who've decided not to pay in full.</p>
+
+      <h3>Overall realization rate</h3>
+
+      <p>The product of the other two. An 88% billing realization rate × 94% collection realization rate = 83% overall. Both components need attention, but not the same attention.</p>
+
+      <p>The reason this distinction matters: I've seen firms spend a lot of money on time-capture tools when their billing realization was actually fine — the leak was in collections, not time entry. The software didn't help.</p>
+
+      <hr>
+
+      <h2>What is a good realization rate for law firms?</h2>
+
+      <p>A healthy overall realization rate for most law firms is 85–95%, with significant variation by firm type and practice area.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Firm Type</th>
+            <th>Typical Range</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BigLaw (100+ attorneys)</td>
+            <td>85–92%</td>
+            <td>Outside counsel guidelines, negotiated rate discounts</td>
+          </tr>
+          <tr>
+            <td>Mid-size boutique (20–75 attorneys)</td>
+            <td>88–94%</td>
+            <td>Fewer OCG constraints, but more partner discretion</td>
+          </tr>
+          <tr>
+            <td>Small firm (5–20 attorneys)</td>
+            <td>85–93%</td>
+            <td>Wide variation; billing discipline matters more</td>
+          </tr>
+          <tr>
+            <td>Solo practice</td>
+            <td>80–92%</td>
+            <td>Depends heavily on client mix and billing frequency</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Practice area matters too. Litigation practices tend to run lower than transactional work — trials create spikes in time that clients sometimes dispute. Estate planning and corporate work, billed in phases or flat fees, can maintain 90%+ realization with the right structure.</p>
+
+      <p>If your firm is under 80%, something specific is broken. That number doesn't happen by accident.</p>
+
+      <hr>
+
+      <h2>How to diagnose your realization problem (before you look at any software)</h2>
+
+      <p>The reason I put "before you look at any software" in the heading is that the two most common tools sold to improve realization rate — AI time capture and AR management platforms — both address real problems but neither one diagnoses them for you.</p>
+
+      <p>Here's the framework I use in the first week at a new firm.</p>
+
+      <h3>Leak #1: Time isn't being captured (billing realization gap from missing time)</h3>
+
+      <p>The test: compare your timekeeper's billing realization rate against their utilization rate. If an attorney is recording 6 billable hours per day but their billing realization is 80%, you have two candidates — missing time or write-downs. Pull their pre-bill write-down history. If write-downs are low, the missing 20% was never entered.</p>
+
+      <p>I have never walked into a firm with a sub-85% billing realization rate where attorneys were consistently entering time same-day. The research supports this — same-day time entries are measurably more accurate and capture more time than reconstructed entries from memory. The difference isn't small; time entered 24–48 hours later tends to miss 15–20% of actual work.</p>
+
+      <p>The fix here is behavioral before it's technological. A 24-hour time entry rule (enforced, not suggested) costs nothing and works before any software does.</p>
+
+      <h3>Leak #2: Partners are writing it down (the accountability conversation nobody wants to have)</h3>
+
+      <p>This is the leak that costs the most money and gets the least attention.</p>
+
+      <p>Partners have unilateral authority over their own pre-bills at most firms. They review time, make adjustments, and send invoices. Nothing in that process requires them to document why they wrote something down, how much they wrote down in total, or what the pattern looks like over 12 months.</p>
+
+      <p>So you end up with a partner who wrote down $6,000 last month, $8,500 the month before, and $5,200 the month before that — and nobody in firm management knows this is happening at that scale because it's buried inside individual pre-bill adjustments.</p>
+
+      <p>Across the firms I've worked with, this is the most common cause of persistently low billing realization. Not time capture. Partners who have been trained (explicitly or implicitly) that pre-bill write-downs are a client-service gesture rather than a firm-economics decision.</p>
+
+      <p>The data fix is straightforward: run a monthly report that shows write-down dollars and write-down percentage by partner. The conversation that follows is less straightforward. What's the threshold that triggers a review? What's the policy on partner discretion vs. partner accountability? Does it connect to comp?</p>
+
+      <p>Most managing partners already know who the write-down outliers are. They just haven't built the structure that makes it a manageable conversation instead of an accusation.</p>
+
+      <h3>Leak #3: Clients aren't paying in full (collection realization gap)</h3>
+
+      <p>If your billing realization is strong but your overall realization is low, you're collecting the problem here. Check your AR aging report — specifically the 90+ day bucket as a percentage of total AR.</p>
+
+      <p>Collection realization problems come from a few places: invoice disputes (client says the bill is too high), friction (clients who intend to pay but don't because the process is clunky), and write-offs (AR that eventually becomes uncollectable). Each has a different fix.</p>
+
+      <p>Invoice disputes usually trace back to expectations. A client who didn't understand what was included in a flat fee, or who gets a time-and-materials bill that's larger than expected, becomes a collections problem. The fix is upstream — better engagement letters, matter budgets, and proactive billing communication before the invoice lands.</p>
+
+      <p>Friction is fixable. Online payment, shorter billing cycles, and payment plans for larger balances all move the needle on collection realization with minimal investment.</p>
+
+      <p>Write-offs are usually the last stage of a relationship problem. The better diagnosis is figuring out which clients are high write-off risks before the matter closes.</p>
+
+      <hr>
+
+      <h2>The management playbook for fixing realization rate</h2>
+
+      <p>Assuming you've now identified your primary leak, here's what to actually do about it.</p>
+
+      <h3>Institute the 24-hour time entry rule — and enforce it</h3>
+
+      <p>Not "we encourage attorneys to enter time daily." A rule: all time entries must be submitted within 24 hours of the work being performed. Time entered after that window requires supervisor review or flagging.</p>
+
+      <p>Enforcement is what makes this work. That means tracking compliance — your billing software can produce a report showing the average lag between work performed and time entered by timekeeper. Review it monthly. Have the conversation with whoever's consistently running 3–4 days behind.</p>
+
+      <p>Some firms connect time entry compliance to monthly billing bonuses or include it in associate reviews. Both work. What doesn't work is posting the rule and relying on culture to enforce it.</p>
+
+      <h3>Use WIP aging as your early warning system</h3>
+
+      <p>Here's something most billing guides skip: WIP aging is a better leading indicator of your future realization rate than your current billing realization rate.</p>
+
+      <p>WIP (work in progress) is time recorded but not yet billed. When that time sits unbilled for 60+ days, two things happen: the attorney's memory of the matter fades (making accurate pre-bill review harder), and the client's sense of the value delivered fades (making large invoices easier to dispute).</p>
+
+      <p>I track WIP aging weekly at every firm I work with. The threshold that matters is 60 days — WIP older than 60 days almost always produces a higher write-down rate than fresher WIP. If you see your 60-day WIP bucket growing, you're looking at a realization problem that hasn't shown up in your numbers yet.</p>
+
+      <p>The fix is a billing cycle review: who has WIP older than 60 days, and what's the path to getting it billed?</p>
+
+      <h3>Pre-bill review accountability: tracking write-downs by partner</h3>
+
+      <p>Build a simple report: write-down dollars and write-down percentage by partner, by month, trailing 12 months. Put it in your monthly management meeting.</p>
+
+      <p>The report itself changes behavior — not because it's punitive but because it creates visibility. Partners who are outliers often don't know they're outliers. They're making individual write-down decisions that feel reasonable in isolation but add up to a pattern.</p>
+
+      <p>The policy question is: what triggers a conversation? My starting point is anything over 10% write-down rate in a given month, or any single matter over $2,500 written down. Neither number is sacred — the right threshold depends on your firm's deal economics — but having a threshold is the thing that matters.</p>
+
+      <h3>Shorten the billing cycle</h3>
+
+      <p>Monthly billing is standard. It's also slower than it needs to be.</p>
+
+      <p>Moving to bi-weekly billing — or matter-milestone billing for flat-fee work — produces a measurable improvement in both billing realization (fresher time = fewer write-downs) and collection realization (smaller invoices are easier for clients to approve quickly).</p>
+
+      <p>The objection I hear most often is that partners don't have time to review pre-bills more frequently. The real answer is that bi-weekly billing doesn't double the review burden — it halves the size of each review. A $15,000 monthly pre-bill produces more disputes and write-downs than two $7,500 bi-weekly bills.</p>
+
+      <hr>
+
+      <h2>What software can and can't fix</h2>
+
+      <p>Time-capture tools (AI timers, automatic time suggestions, integrated billing) are genuinely useful for Leak #1. They reduce reconstruction guesswork and help attorneys capture work they'd otherwise miss. If your billing realization problem is primarily from missing time, investing here makes sense.</p>
+
+      <p>AR management platforms and client portals reduce friction in collections. They're useful for Leak #3. Online payment, automated reminders, and payment plans all move the needle.</p>
+
+      <p>Neither one addresses Leak #2.</p>
+
+      <p>No software can have the write-down accountability conversation with a partner. No software can set and enforce a firm policy on pre-bill discretion. No software can connect write-down patterns to comp conversations or partner reviews. That work requires management structure — a managing partner or COO who owns the metrics, runs the reports, and is willing to have the conversation.</p>
+
+      <p>This isn't a criticism of the software. It's accurate about the limits. The firms I see spend the most on billing technology while maintaining 80% realization are almost always firms where Leak #2 is the primary problem. The technology is doing what it's supposed to do. The management structure isn't.</p>
+
+      <hr>
+
+      <h2>Frequently asked questions about law firm realization rates</h2>
+
+      <div class="faq-item">
+        <h3>What is a good realization rate for law firms?</h3>
+        <p>A healthy realization rate for most law firms is 85–95%. BigLaw firms typically run 85–92% due to outside counsel guidelines and negotiated rate discounts. Boutique and mid-size firms should target 88–95%. Below 80% means something specific is broken and needs diagnosis.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the difference between billing realization rate and collection realization rate?</h3>
+        <p>Billing realization measures how much of time worked gets billed: billed fees divided by worked fees. Collection realization measures how much of what you bill you actually collect: collected fees divided by billed fees. They identify different problems. Low billing realization points to time capture or partner write-downs. Low collection realization points to AR management.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What causes low realization rates in law firms?</h3>
+        <p>Three causes account for most cases: time not being captured (attorneys entering time days later from memory), partners writing down time at pre-bill review without accountability, and clients not paying invoices in full. Most firms have a primary leak in one of these three areas.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the difference between utilization rate and realization rate?</h3>
+        <p>Utilization measures what percentage of available hours gets recorded as billable. Realization measures what percentage of those recorded hours turns into collected revenue. You can have high utilization and low realization — attorneys billing many hours that then get written down or uncollected.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can a law firm have a realization rate above 100%?</h3>
+        <p>Yes, in specific situations — contingency matters that settle above expected value, flat fee work completed faster than budgeted, or upward value billing adjustments. Uncommon for overall firm realization but happens at the matter or practice group level.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the fastest way to improve realization rate?</h3>
+        <p>Tighten the billing cycle first — move from monthly to bi-weekly billing. Fresher invoices get fewer disputes and fewer write-downs. Combined with a 24-hour time entry policy, most firms see measurable improvement within 60 days. Partner write-down accountability takes longer but has the biggest long-term impact.</p>
+      </div>
+
+      <!-- Author bio -->
+      <div class="author-bio">
+        <div class="author-bio-text">
+          <strong>John Jakovenko</strong>
+          <p>John is a fractional law firm COO and the founder of <a href="https://lawfirm.consulting">The Jakovenko Group</a>. He works with law firms across the country on operations, financial performance, and AI implementation. His book, <em>The Millionaire Law Firm</em>, is available on Amazon. If your firm has a realization problem you can't diagnose, <a href="/contact.html">book a call</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CTA Band -->
+<div class="cta-band">
+  <div class="container">
+    <h2>Your realization rate has a leak. Let's find it.</h2>
+    <p>One conversation is usually enough to identify whether it's time capture, partner write-downs, or collections — and what to do first.</p>
+    <a href="/contact.html" class="btn btn-white">Book a Free Call</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">Jakovenko<span>.</span>Group</a>
+        <p>Fractional law firm COO and operations consulting. Milton, GA.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Work</h5>
+          <ul>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <ul>
+            <li><a href="/about.html">About John</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 The Jakovenko Group. All rights reserved.</p>
+      <p>Milton, GA · <a href="mailto:john@lawfirm.consulting" style="color: rgba(255,255,255,0.3);">john@lawfirm.consulting</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

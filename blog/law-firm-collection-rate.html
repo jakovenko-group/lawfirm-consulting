@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm Collection Rate: What It Is and How to Fix It</title>
+  <meta name="description" content="Most law firms with collection problems aren't fixing the right thing. Here's how to diagnose what's keeping your rate low and what to do at day 31.">
+  <link rel="canonical" href="https://lawfirm.consulting/blog/law-firm-collection-rate">
+  <meta property="og:title" content="Law Firm Collection Rate: What It Is and How to Fix It">
+  <meta property="og:description" content="Most law firms with collection problems aren't fixing the right thing. Here's how to diagnose what's keeping your rate low and what to do at day 31.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lawfirm.consulting/blog/law-firm-collection-rate">
+  <meta property="article:published_time" content="2026-07-05">
+  <meta property="article:author" content="John Jakovenko">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Law Firm Collection Rate: What It Is, What's Keeping It Low, and How to Fix It",
+        "description": "A management guide to diagnosing and improving law firm collection rates — written by a fractional COO who has worked with 100+ firms.",
+        "author": {
+          "@type": "Person",
+          "name": "John Jakovenko",
+          "jobTitle": "Fractional Law Firm COO",
+          "url": "https://lawfirm.consulting/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Jakovenko Group",
+          "url": "https://lawfirm.consulting"
+        },
+        "datePublished": "2026-07-05",
+        "dateModified": "2026-07-05",
+        "url": "https://lawfirm.consulting/blog/law-firm-collection-rate",
+        "mainEntityOfPage": "https://lawfirm.consulting/blog/law-firm-collection-rate"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a good collection rate for a law firm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A good collection rate for a law firm is 90% or higher. Firms at 95%+ are running a tight billing operation. Anything below 85% needs diagnosis — not more software, but a real look at why invoices are aging and who isn't following up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between realization rate and collection rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Realization rate measures how much of the time worked gets billed — it catches write-downs and missing time entries. Collection rate measures how much of what you billed you actually collected. They track different failure points: realization breaks happen before the invoice; collection rate breaks happen after it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What causes low collection rates in law firms?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The three most common causes are: clients who didn't expect the bill (engagement letter or scope failures), attorneys who avoid the follow-up call to protect the client relationship, and AR that ages past 90 days without a firm escalation policy. Most firms underestimate the second cause."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you calculate collection rate for a law firm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collection rate = (Total fees collected ÷ Total fees billed) × 100. If you billed $200,000 and collected $182,000, your collection rate is 91%. Track this monthly by attorney and by practice group — the firm-wide number hides outliers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you improve a law firm's collection rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Five levers matter most: screen clients for collection risk before taking the matter, run AR aging as a weekly management conversation (not a monthly spreadsheet), hand off follow-up to a billing coordinator at day 31 so attorneys aren't the ones making the collections call, enforce evergreen retainer replenishment, and shorten the billing cycle so invoices land while the work is still fresh in the client's mind."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do some law firms consistently have lower collection rates than others?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consistently low collection rates almost always trace back to one of two things: no structured escalation process (so AR ages without anyone owning the decision), or attorneys who protect client relationships by not following up, with no one else assigned to do it. Both are management structure problems. Software alone doesn't fix either one."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .article-hero { background: var(--dark); padding: 64px 0 56px; position: relative; overflow: hidden; }
+    .article-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 60%, rgba(37,99,235,0.1) 0%, transparent 70%); pointer-events: none; }
+    .article-hero .container { position: relative; max-width: 780px; }
+    .article-category { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #93c5fd; margin-bottom: 20px; }
+    .article-hero h1 { font-size: clamp(1.75rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--white); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 20px; }
+    .article-byline { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .byline-author { font-size: 0.875rem; font-weight: 600; color: rgba(255,255,255,0.8); }
+    .byline-sep { color: rgba(255,255,255,0.25); }
+    .byline-date, .byline-read { font-size: 0.875rem; color: rgba(255,255,255,0.45); }
+    .article-body { padding: 64px 0 80px; }
+    .article-body .container { max-width: 780px; }
+    .prose p { font-size: 1.0625rem; color: var(--text); line-height: 1.8; margin-bottom: 1.4rem; }
+    .prose h2 { font-size: 1.5rem; font-weight: 800; color: var(--dark); letter-spacing: -0.025em; line-height: 1.2; margin-top: 2.75rem; margin-bottom: 1rem; }
+    .prose h3 { font-size: 1.125rem; font-weight: 700; color: var(--dark); letter-spacing: -0.015em; margin-top: 2rem; margin-bottom: 0.75rem; }
+    .prose hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    .prose strong { font-weight: 700; color: var(--dark); }
+    .prose em { font-style: italic; }
+    .prose a { color: var(--accent); }
+    .prose a:hover { text-decoration: underline; }
+    .prose ol { margin: 0 0 1.4rem 1.5rem; font-size: 1.0625rem; color: var(--text); line-height: 1.75; }
+    .prose ol li { margin-bottom: 0.4rem; }
+    .prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin: 1.75rem 0 2rem; }
+    .prose table thead th { text-align: left; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); padding: 0.6rem 1rem; border-bottom: 2px solid var(--border); }
+    .prose table tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .prose table tbody tr:last-child td { border-bottom: none; }
+    .prose table tbody tr:nth-child(even) td { background: #f8fafc; }
+    .formula-box { background: #f1f5f9; border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 20px 24px; margin: 1.75rem 0; }
+    .formula-box p { font-size: 1rem; font-weight: 600; color: var(--dark); margin: 0; font-family: 'Courier New', monospace; }
+    .faq-item { border-top: 1px solid var(--border); padding: 1.5rem 0; }
+    .faq-item:last-child { border-bottom: 1px solid var(--border); }
+    .faq-item h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin: 0 0 0.65rem; letter-spacing: -0.01em; line-height: 1.4; }
+    .faq-item p { font-size: 0.9375rem; color: var(--muted); line-height: 1.7; margin: 0; }
+    .faq-item a { color: var(--accent); }
+    .author-bio { background: var(--light); border-radius: 8px; padding: 28px 32px; margin-top: 3rem; }
+    .author-bio-text strong { color: var(--dark); font-size: 1rem; display: block; margin-bottom: 6px; }
+    .author-bio-text p { font-size: 0.9375rem; color: var(--muted); line-height: 1.7; margin: 0; }
+    .author-bio-text a { color: var(--accent); }
+    @media (max-width: 768px) { .prose h2 { font-size: 1.3rem; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">Jakovenko<span>.</span>Group</a>
+    <ul class="nav-links">
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/contact.html" class="nav-cta">Book a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="container">
+    <span class="article-category">Law Firm Profitability</span>
+    <h1>Law Firm Collection Rate: What It Is, What's Keeping It Low, and How to Fix It</h1>
+    <div class="article-byline">
+      <span class="byline-author">John Jakovenko</span>
+      <span class="byline-sep">·</span>
+      <span class="byline-date">July 5, 2026</span>
+      <span class="byline-sep">·</span>
+      <span class="byline-read">10 min read</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-body">
+  <div class="container">
+    <div class="prose">
+
+      <p>When firms bring me in for a <a href="/services.html">fractional COO engagement</a>, the collection rate conversation usually goes like this: the managing partner tells me the rate is around 87%, they've already looked at a billing software demo, and they think the fix is automating follow-up reminders.</p>
+
+      <p>The reminders are fine. They're not the problem.</p>
+
+      <p>The collection rate at most firms I've seen isn't a technology problem. It's a human problem — specifically, it's an attorney who hasn't returned a client's call because the invoice is awkward, sitting on top of an AR aging report that nobody's reviewed since last month, on top of an engagement letter that left billing expectations vague enough to dispute.</p>
+
+      <p>Software doesn't fix any of that.</p>
+
+      <p>Here's how to actually diagnose what's keeping your law firm collection rate low — and what to do at day 31 before the invoice becomes a write-off.</p>
+
+      <hr>
+
+      <h2>What is a law firm's collection rate?</h2>
+
+      <p>A law firm's collection rate is the percentage of billed fees that the firm actually collects. It measures the gap between what you invoice and what ends up in the bank.</p>
+
+      <h3>The collection rate formula</h3>
+
+      <div class="formula-box">
+        <p>Collection rate = (Total fees collected ÷ Total fees billed) × 100</p>
+      </div>
+
+      <p>If you billed $200,000 in a month and collected $182,000, your collection rate is 91%. Track this monthly by attorney and practice group. The firm-wide number hides outliers — a partner with a 78% collection rate drags the average down without ever showing up in a management meeting.</p>
+
+      <hr>
+
+      <h2>Collection rate vs. realization rate: which one tells you what</h2>
+
+      <p>These two metrics track failure at different stages of the billing cycle, and confusing them produces the wrong fix.</p>
+
+      <p><a href="/blog/law-firm-realization-rate">Realization rate</a> measures the gap between time worked and fees billed. It catches write-downs and unrecorded time — problems that happen before the invoice goes out.</p>
+
+      <p>Collection rate measures the gap between fees billed and fees collected. It catches invoice disputes, payment delays, and write-offs — problems that happen after the invoice goes out.</p>
+
+      <p>A firm can have a strong realization rate and a weak collection rate, or vice versa. If you're diagnosing a revenue problem, you need both numbers. They're not interchangeable.</p>
+
+      <hr>
+
+      <h2>What is a good collection rate for law firms?</h2>
+
+      <p>A good collection rate is 90% or higher. Firms at 95%+ are running a disciplined billing and collections process. Industry data from LawPay's 2025 Legal Industry Report puts the average across US law firms at roughly 93%.</p>
+
+      <table>
+        <thead>
+          <tr><th>Firm Type</th><th>Target Range</th><th>Warning Sign</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>BigLaw (100+ attorneys)</td><td>90–95%</td><td>Below 88%</td></tr>
+          <tr><td>Mid-size boutique (20–75 attorneys)</td><td>90–95%</td><td>Below 87%</td></tr>
+          <tr><td>Small firm (5–20 attorneys)</td><td>88–95%</td><td>Below 85%</td></tr>
+          <tr><td>Solo practice</td><td>85–93%</td><td>Below 82%</td></tr>
+        </tbody>
+      </table>
+
+      <p>Below 85% means something specific is broken. The rate doesn't drift there — it gets pushed there by identifiable problems that have identifiable fixes.</p>
+
+      <hr>
+
+      <h2>Why law firms have collection problems (and it's not always what you think)</h2>
+
+      <p>Most articles on this topic list the usual causes: unclear invoices, limited payment options, no follow-up system. All true. All fixable with process and software.</p>
+
+      <p>What doesn't get covered is why those problems persist at firms that have already implemented the standard fixes. That answer usually isn't technology.</p>
+
+      <h3>Clients who didn't expect the bill</h3>
+
+      <p>Invoice disputes almost always trace back to something that happened at intake or during the engagement — not at billing. A client who was surprised by a flat fee overage. An estate planning client who didn't know document revisions were billed separately. A litigation client who expected a budget conversation and never got one.</p>
+
+      <p>By the time the dispute surfaces at billing, the engagement letter has already failed. The fix is upstream: clearer scope language, matter budgets for time-and-materials work, and a proactive check-in when a matter is tracking over estimate. None of that is a billing software feature.</p>
+
+      <h3>Attorneys who avoid the money conversation</h3>
+
+      <p>This is the collection problem that no software vendor will tell you about, because acknowledging it doesn't sell anything.</p>
+
+      <p>Attorneys built careers on client relationships. The managing partner who's been handling a client's real estate transactions for 12 years does not want to call that client about an overdue invoice. The call feels like it risks the relationship. So they put it off. Thirty days become sixty. Sixty become ninety. At ninety days the relationship is still intact but the invoice is probably uncollectable.</p>
+
+      <p>This isn't a character failure. It's a predictable human response to an uncomfortable situation, and it happens at every firm I've worked with. The fix isn't motivating attorneys to be more assertive about collections. It's removing the attorney from the collections process after a defined point.</p>
+
+      <h3>The 90-day cliff: when AR stops being a collection problem and becomes a write-off</h3>
+
+      <p>Once AR hits 90 days past due, recovery probability drops sharply. Studies on professional services collections put it below 70% at 90 days and around 50% at 180 days.</p>
+
+      <p>The mental reframe I use with managing partners: by the time an invoice hits 90 days, the firm has usually already decided to write it off — they just haven't admitted it. The real decision isn't at day 90. It's at day 31.</p>
+
+      <p>What happens at day 31 in your firm? Is there a defined owner for that follow-up? Is there a protocol, or does it depend on whoever happens to check the AR aging report? Most firms can answer that question honestly in about ten seconds.</p>
+
+      <hr>
+
+      <h2>The collections management playbook</h2>
+
+      <h3>1. Screen for collection risk before you take the client</h3>
+
+      <p>The cheapest collections fix is not having the problem in the first place.</p>
+
+      <p>Clients who will be hard to collect from usually show signs during intake: pushback on the retainer amount, hesitation about the engagement letter terms, billing sensitivity in early conversations, or a pattern of asking for fee estimates then expressing surprise when the bill matches them.</p>
+
+      <p>None of these alone is disqualifying. Together, they warrant either a larger retainer requirement or a flat-fee structure that eliminates billing ambiguity. Some matters — and some clients — aren't worth taking without a retainer that fully covers the expected fees. This requires a written intake policy, not a gut-feel call by the billing attorney.</p>
+
+      <h3>2. Run an AR aging meeting — weekly, not monthly</h3>
+
+      <p>Reviewing AR monthly in a spreadsheet is how invoices reach 90 days unnoticed. The ones that slip are always the ones that fell off the priority list between reviews.</p>
+
+      <p>Weekly AR aging is a 20-minute management conversation, not an accounting exercise. Who's past 30 days? Who's past 60? Who owns the outreach this week? What's the status from last week? This keeps escalation decisions happening at day 31 instead of day 61.</p>
+
+      <p>The meeting should have a defined owner — billing coordinator, COO, or office manager — and produce a short action list that gets followed up at next week's meeting.</p>
+
+      <h3>3. Get the attorney out of the collections call</h3>
+
+      <p>Define exactly when attorney responsibility for collections ends and administrative follow-up begins. My starting point: day 31.</p>
+
+      <p>After 31 days unpaid, the follow-up comes from the billing coordinator or administrator, not the billing attorney. The attorney gets a weekly status update but isn't the one on the phone asking for money. This removes the relationship-protection excuse for delay and puts follow-up in the hands of someone whose job it is to make the call.</p>
+
+      <p>The attorney re-engages for strategy — deciding whether to negotiate a payment plan, whether to write off a long-standing client — but the routine follow-up is systematized rather than left to individual discretion.</p>
+
+      <h3>4. Enforce evergreen retainer discipline</h3>
+
+      <p>The evergreen retainer is the single best collections tool available. When a client maintains a funded trust balance throughout the engagement, the firm is always working on money already in hand. The collection rate problem largely disappears.</p>
+
+      <p>The problem is that most firms let retainers run down. The client's trust balance depletes, work continues on credit, and the firm is back in the same collection position it was trying to avoid.</p>
+
+      <p>The fix: define a replenishment trigger in the engagement letter. When the trust balance drops below 50% of the initial deposit, the client receives an automatic request to replenish before work continues. This has to be in the engagement letter — not a policy the firm applies selectively when they feel like it. Firms that enforce this consistently maintain collection rates above 95%.</p>
+
+      <h3>5. Invoice while the work is fresh</h3>
+
+      <p>The longer the gap between work performed and invoice delivered, the higher the dispute probability. A client who receives an invoice 60 days after the work was done has already mentally moved on. Their budget has been reallocated. The invoice arrives as a surprise.</p>
+
+      <p>Top-performing firms invoice within 20 days of work performed. Most mid-size firms run closer to 36 days. That gap compounds — each additional week of billing lag adds dispute risk and extends the collection timeline. Bi-weekly billing cycles and hard pre-bill review deadlines compress this without adding staff.</p>
+
+      <hr>
+
+      <h2>What technology helps — and what it can't do</h2>
+
+      <p>AR management platforms, client portals, automated reminders, and online payment options all genuinely help. Firms that accept electronic payment get paid faster — industry data consistently shows it reduces time-to-collection. Automated reminders remove the manual burden. Real-time AR dashboards eliminate the "I didn't know it was that old" excuse. Use them.</p>
+
+      <p>But none of them solve the attorney aversion problem. No software tells an attorney to stop protecting a client relationship at the expense of the firm's AR. No software forces the weekly escalation meeting, defines the day-31 handoff, enforces retainer replenishment, or tightens engagement letter language.</p>
+
+      <p>Those are management decisions. They need someone with authority over the billing process to make and enforce them.</p>
+
+      <hr>
+
+      <h2>Frequently asked questions about law firm collection rates</h2>
+
+      <div class="faq-item">
+        <h3>What is a good collection rate for a law firm?</h3>
+        <p>A good collection rate is 90% or higher. Firms at 95%+ are running a disciplined billing and collections operation. Below 85% means something specific is broken and needs diagnosis before anything else.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is the difference between realization rate and collection rate?</h3>
+        <p>Realization rate catches problems before the invoice — write-downs, missing time entries, billing realization gaps. Collection rate catches problems after the invoice — disputes, aging AR, write-offs. Both matter and they don't have the same fixes. Read the <a href="/blog/law-firm-realization-rate">full breakdown on realization rate here</a>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What causes low collection rates in law firms?</h3>
+        <p>Three causes account for most cases: clients who didn't expect the bill (engagement letter failures), attorneys who avoid follow-up to protect relationships, and AR that ages past 90 days without a defined escalation policy. Most firms underestimate the second cause.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do you calculate collection rate for a law firm?</h3>
+        <p>Collection rate = (Total fees collected ÷ Total fees billed) × 100. Track it monthly by attorney and practice group. The firm-wide number hides outliers.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do you improve a law firm's collection rate?</h3>
+        <p>Five levers: screen clients for collection risk at intake, run AR aging weekly, hand follow-up to a billing coordinator at day 31, enforce evergreen retainer replenishment, and shorten the billing cycle to invoice within 20 days of completed work.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why do some law firms consistently have lower collection rates than others?</h3>
+        <p>Consistently low rates trace back to one of two things: no structured escalation process (AR ages without anyone owning it), or attorneys who protect client relationships by not following up, with no one else assigned to do it. Both are management structure problems. Software doesn't fix either one.</p>
+      </div>
+
+      <div class="author-bio">
+        <div class="author-bio-text">
+          <strong>John Jakovenko</strong>
+          <p>John is a fractional law firm COO and the founder of <a href="https://lawfirm.consulting">The Jakovenko Group</a>. He works with law firms across the country on operations, financial performance, and AI implementation. His book, <em>The Millionaire Law Firm</em>, is available on Amazon. If your firm has a collection rate problem you can't diagnose, <a href="/contact.html">book a call</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <div class="container">
+    <h2>Your AR aging report is telling you something. Let's figure out what.</h2>
+    <p>One conversation is usually enough to identify whether it's an attorney aversion problem, a retainer gap, or a day-31 escalation failure — and what to do first.</p>
+    <a href="/contact.html" class="btn btn-white">Book a Free Call</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">Jakovenko<span>.</span>Group</a>
+        <p>Fractional law firm COO and operations consulting. Milton, GA.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Work</h5>
+          <ul>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Book a Call</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>About</h5>
+          <ul>
+            <li><a href="/about.html">About John</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 The Jakovenko Group. All rights reserved.</p>
+      <p>Milton, GA · <a href="mailto:john@lawfirm.consulting" style="color: rgba(255,255,255,0.3);">john@lawfirm.consulting</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
